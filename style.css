@@ -83,16 +83,28 @@
 
 }
 
-#hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.263)),url('yalovagece.jpg');
-    background-size: cover;
-    background-position: center center;
-    background background-attachment: fixed;
+/* index css dosyası */
+.dark-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url('yalovagece.jpg');
+   
+    background-size:cover;
+    background-position:bottom center;
+    background-attachment:fixed;
     margin-top:-8px;
+    
 
 }
 
-#hero .container{
+.dbcontainer{
     height:50vh;
 
 }
+
+.bg-elis{
+    background-color: rgb(2, 3, 3) !important;
+}
+
+.generic{
+    padding:100px 0;
+}
+
