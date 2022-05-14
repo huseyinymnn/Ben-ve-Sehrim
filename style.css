@@ -107,4 +107,12 @@
 .generic{
     padding:100px 0;
 }
+.footerA{
+    color:white;
+    text-decoration: none;
+
+}
+.footerLi{
+    list-style-type: none;
+}
 
