@@ -1,32 +1,4 @@
-.egitim{
-background-color: azure;
-}
 .bg-elis
 {
     background-color: black;
-}
-
-.egitim h3{
-    font-size: 40px;
-    margin:0;
-    padding:15px;
-    font-family: sans-serif;
-}
-.egitim p{
-    font-size:16px;
-    padding:10px;
-}
-aside{
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    float:right;
-}
-.resim{
-    float:inline-end;
-
-}
-.resim img{
-    width:550px;
-    height:200px;
 }
