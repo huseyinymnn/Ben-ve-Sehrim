@@ -10,7 +10,7 @@
 
         if ($username==$user && $password==$pass)
         {
-            header('location:index.html');
+            header('location:hakkinda.html');
             exit();
         }
         else 
