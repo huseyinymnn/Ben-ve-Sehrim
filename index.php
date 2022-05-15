@@ -32,7 +32,7 @@
     <div class="main">
         <div class="form-box">
             
-    <form class="input-group">
+    <form class="input-group" action="hakkinda.html">
         <input type="email" class="input-field" placeholder="Kullanıcı adını giriniz!" name="eposta" required autofocus>
         <input type="password" class="input-field" placeholder="Şifrenizi giriniz!" name="sifre" required> 
         <button type="submit" class="submit-button">GİRİŞ</button>    
