@@ -31,7 +31,7 @@
        
        <section class="sectionIletisim">
                <div class="container">
-                       <form>
+                       <form id="form" aciton="" method="post" onsubmit="return epostaKontrolu()">
                        <div class="w-25 mx-auto">
                         <div class="w-100 bg-secondary p-3 text-light rounded-3 text-center">
                                 <span>BİZE ULAŞIN</span>
@@ -40,11 +40,12 @@
                         </div>
                         <div class="w-100 p-1">
                                 <label class="form-label">Mail Adresiniz</label>
-                                <input type="email" placeholder="Mail Adresini Giriniz!" required class="form-control border border-info">
+                                <input type="email" placeholder="Mail Adresini Giriniz!" name="eposta" id="email" onkeydown="epostaKontrolu()"  class="form-control border border-info">
+                                <span id="text1"></span>
                         </div>
                         <div class="w-100 p-1">
                                 <label class="form-label">Mesajınız</label>
-                               <textarea cols="20" rows="10" required class="form-control"></textarea>
+                               <textarea cols="20" rows="10"  class="form-control"></textarea>
                         </div>
                         <div class="w-50 mx-auto">
                                 <button type="submit" class="btn btn-danger">Gönder</button>
@@ -52,6 +53,40 @@
                         </div>
                        </div>
                 </form>
+                <script type="text/javascript">
+
+                        function epostaKontrolu()
+                        {
+                            var form = document.getElementById("form");
+                            var email = document.getElementById("email").value;
+                            var text = document.getElementById("text1");
+                            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            
+                            if(email.match(pattern))
+                            {
+                                form.classList.add("valid");
+                                form.classList.remove("invalid");
+                                text.innerHTML = "E-posta adresi geçerli";
+                                text.style.color = "green";
+                            }
+                            else
+                            {
+                                form.classList.remove("valid");
+                                form.classList.add("invalid");
+                                text.innerHTML = "*Geçerli e-posta adresi giriniz";
+                                text.style.color = "#ff0000";
+                            }
+            
+                            if(email == "")
+                            {
+                                form.classList.remove("valid");
+                                form.classList.remove("invalid");
+                                text.innerHTML = "*E-posta adresini boş bırakamazsınız";
+                                text.style.color = "#ff0000";
+                                return false;
+                            }
+                        }
+                    </script>
                        
                </div>
        </section>
